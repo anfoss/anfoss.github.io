@@ -13,9 +13,9 @@ ____
 
 ## Hi I'm Andrea
 
-I am a wannabe computational biologist working as PhD student in the Aebersold group at ETH Zurich Institute of Molecular System biology.
+I am a wannabe computational biologist working as postdoctoral fellow in the Krogan Lab at UCSF.
 
-I am interested in increase our understanding on the principles underlying epigenetic remodelling and cell fate commitment in the context of human diseases.
+I am interested in advance our understanding on the principles regulating host-pathogen interactions in the context of human diseases.
 
 Because cells are complex systems, traditional reductionistic approaches have fallen short in explaining complex biological processes. Answering these questions require not only several layers of information, but also novel bioinformatic solutions to integrate these heterogenous data sources.
 
