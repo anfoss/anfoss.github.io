@@ -10,5 +10,5 @@ tags:
   - statistics
 ---
 
-Here I will show how to import the results from [PCprophet](https://github.com/fossatiA/PCprophet) into Cytoscape and some cool stuff that can be done with this type of data.
+Here I will show how to import the results from [PCprophet](https://github.com/anfoss/PCprophet) into Cytoscape and some cool stuff that can be done with this type of data.
 This is the results of our analysis of different cellular states as described in our preprint [here](biorvix...).

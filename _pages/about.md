@@ -31,7 +31,7 @@ I like to think about cells and molecular systems as a social network, where eve
 **Towards next-generation interactomics**
 
 
-During my PhD in the Aebersold group I have been involved into development of next-generation interactomics technologies such as size-exclusion chromatography SWATH mass spectrometry _(SEC-SWATH)_. This technique allows for system-wide protein-protein interaction mapping and to obtain description of modularity and stoichiometry thanks to the inherent quantitative nature of data-independent acquisition. However, data analysis for this type of data is cumbersome and relies heavily on prior knowledge. To advance this I developed [PCprophet](https://fossatia.github.io/portfolio/pcprophet/), the first tool  for protein complex prediction directly from co-elution data and then expand it to the differential analysis of multiple conditions.
+During my PhD in the Aebersold group I have been involved into development of next-generation interactomics technologies such as size-exclusion chromatography SWATH mass spectrometry _(SEC-SWATH)_. This technique allows for system-wide protein-protein interaction mapping and to obtain description of modularity and stoichiometry thanks to the inherent quantitative nature of data-independent acquisition. However, data analysis for this type of data is cumbersome and relies heavily on prior knowledge. To advance this I developed [PCprophet](https://anfoss.github.io/portfolio/pcprophet/), the first tool  for protein complex prediction directly from co-elution data and then expand it to the differential analysis of multiple conditions.
 
 <!-- **Spatial organization within a cell defines**
 

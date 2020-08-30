@@ -13,7 +13,7 @@ tags:
 For a project I was working on I needed to compare several common interaction scoring algorithms (Saint, Mist, ComPass). As the final goal was to employ them for a larger project, I decided to re-implement some of them in Python.
 So in this series of posts we will be looking at how to translate either R into Python or directly from the publication method.\n
 
-All of this scripts are available at https://github.com/fossatiA/pyAPMS
+All of this scripts are available at https://github.com/anfoss/pyAPMS
 
 #### ComPass
 

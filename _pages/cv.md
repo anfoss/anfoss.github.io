@@ -41,19 +41,19 @@ As undegraduate I performed by bachelor thesis in the Careri group at the Univer
 
 ## Publications
 
-See [publication](https://fossatia.github.io/publications/) page
+See [publication](https://anfoss.github.io/publications/) page
 
 
 ## Softwares
 
-See [software](https://fossatia.github.io/portfolio/) page
+See [software](https://anfoss.github.io/portfolio/) page
 
 
 ## Teaching and mentoring
 
 I have been teaching proteomics and computational biology during my PhD at both undergraduate and graduate level.
-See [teaching](https://fossatia.github.io/teaching/) page for details on courses and topics.
+See [teaching](https://anfoss.github.io/teaching/) page for details on courses and topics.
 In addition I supervised 2 master students (9 months each) and 1 semester student (3 months).
 
 
-[//]: <> (My extended resume is available [here](https://fossatia.github.io/folder/AF_resume.pdf))
+[//]: <> (My extended resume is available [here](https://anfoss.github.io/folder/AF_resume.pdf))
