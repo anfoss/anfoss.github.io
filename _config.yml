@@ -7,18 +7,18 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Andrea Fossati"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Andrea Fossati"
-description              : &description "Andrea Fossati"
-url                      : https://anfoss.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Your Name"
+description              : &description "personal description"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "anfoss/anfoss.github.io"
+repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Andrea Fossati"
+  name             : "Your Sidebar Name"
   avatar           : "profile.png"
-  bio              : "PhD student in proteomics and system biology. Bioinformatics aficionados and mass spec handyman for fun"
-  location         : "Zurich"
+  bio              : "Your biography for the left-hand sidebar"
+  location         : "Location"
   employer         :
-#  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-#  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "fossati@imsb.biol.ehtz.ch"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,33 +96,32 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "anfoss"
+  github           : "academicpages"
+  google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0001-5170-4903"
+  orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "andreafossati9"
+  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
 
+
 # Reading Files
 include:
   - .htaccess
   - _pages
-  - "*.pdf"
-  # - "papers/*.pdf"
-  # - "portfolio/papers/*.pdf"
-  # - "portfolio/*.pdf"
+  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -130,22 +129,23 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
   - CHANGELOG
-  - config
+  - Capfile
   - Gemfile
   - Gruntfile.js
-  - gulpfile.js
   - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
   - log
   - node_modules
   - package.json
-  - Rakefile
-  - README
   - tmp
+  - vendor
 keep_files:
   - .git
   - .svn
@@ -178,16 +178,13 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  # articles:
-  #   output: true
-  #   permalink: /:collection/:path/
-  expressions:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+  publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -218,10 +215,18 @@ defaults:
       type: teaching
     values:
       layout: single
-      read_time: false
       author_profile: true
-      share: false
-      comments: false
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""
@@ -231,15 +236,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _articles
-  # - scope:
-  #     path: ""
-  #     type: publications
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comments: true
   # _talks
   - scope:
       path: ""
@@ -247,7 +243,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: false
+      share: true
 
 # Sass/SCSS
 sass:
@@ -263,12 +259,11 @@ timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
