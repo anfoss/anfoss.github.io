@@ -7,8 +7,8 @@ redirect_from:
   - /resume
 ---
 
-
-I am a PhD student in System Biology at ETH Zurich developing next generation interactomics technologies. I provided the first tools for complex-centric prediction of novel protein complexes. I've been programming since high school and spend my extra time working on a selection of projects to improve my current skill-set. 3+ years of experience in mass spectrometry based proteomics. Proficient in data mining, network analysis and statistical modeling.
+I am a postdoctoral fellow in the Krogan lab at UCSF, working on host-pathogen interactions using next generation interactomics technologies.
+I provided the first tools for complex-centric prediction of novel protein complexes. I've been programming since high school and spend my extra time working on a selection of projects to improve my current skill-set. 3+ years of experience in mass spectrometry based proteomics. Proficient in data mining, network analysis and statistical modeling.
 
 
 ## Software skills
