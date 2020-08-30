@@ -22,18 +22,23 @@ I provided the first tools for complex-centric prediction of novel protein compl
 
 ## Research Experience
 
-#### Institute of Molecular System Biology (2017-2020)
+#### Quantitative Bioscience Institute, UCSF (2020-current)
+*Supervisor: Nevan Krogan*
+
+I am currently a postdoctoral fellow in the Krogan lab at UCSF. My main project involves investigation of host-pathogen interactions in a variety of bacteria and virus. I also am actively involved into development of data independent acquisition strategies for ion mobility instruments (TIMS-DIA and FAIMS-DIA).
+
+#### Institute of Molecular System Biology, ETH Zurich (2017-2020)
 *Supervisors: Ruedi Aebersold, Matthias Gstaiger*
 
 I did my PhD in the Aebersold lab at ETH Zurich, where I investigated the mechanism of mammalian dosage compensation using mass spectrometry based proteomics. I developed software tools for protein complex and protein interaction prediction from co-fractionation data.
 
 
-#### Institute of Molecular Biochemistry and Biophysics (2016-2017)
+#### Institute of Molecular Biochemistry and Biophysics, Karolinska Institute (2016-2017)
 *Supervisor: Roman Zubarev*
 
 I have been a research assistant in the Zubarev group at Karolinska Institute where I was working on rheumatoid arthritis. Here I developed a ion scoring algorithm for identification of citrullinated peptides from lung patient biopsies.
 
-#### Department of Analytical Chemistry (2014)
+#### Department of Analytical Chemistry, University of Parma (2014)
 *Supervisor: Maria Careri*
 
 As undegraduate I performed by bachelor thesis in the Careri group at the University of Parma where I worked on development and optimization of multiple reaction monitoring methods for detection of neurotoxins
