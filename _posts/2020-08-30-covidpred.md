@@ -10,13 +10,13 @@ tags:
 ---
 
 
-### Machine learning for proteomics: an easy introduction
+## Machine learning for proteomics: an easy introduction
 In a lot of proteomics publications recently, machine learning algorithms are used to perform a variety of tasks such as sample classification, image segmentation or prediction of important features in a set of samples.
 
 In this series I want to explore a bit how to employ machine learning in omics/proteomics and in general some good do's and don't in machine learning applications, plus providing some Python3 code to exemplify some of the ideas.
 Only prerequisite is basic understanding of Python. I will drop explanation of things which I reckon be important but feel free to reach out for curiosities or similar
 
-#### Case study using random forest to predict COVID19 severity
+### Case study using random forest to predict COVID19 severity
 
 Random forest is one of the most basic learning algorithm around the block and the easiest to apply. For a detailed explanation, there are several resources such as [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), but here I will focus on more hands-on tutorial and explain things I think are important as we go.
 One of the major application where random forest is employed in proteomics paper is scoring of proteins across samples and sample classification.
