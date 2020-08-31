@@ -1,7 +1,7 @@
 ---
 title: 'ML_covid'
 date: 2020-08-30
-permalink: /posts/covidpred/
+permalink: /posts/2020/08/covidpred/
 tags:
   - Machine learning
   - Proteomics
