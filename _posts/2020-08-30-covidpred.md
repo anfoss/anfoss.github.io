@@ -151,7 +151,7 @@ Here we can see that we achieved 70% recall and made two mistakes in classificat
 Let's see if we can improve this by doing some parameter optimization. For this we will use a random grid search search. We will generate a set of various parameters and test random combinations to train our model.
 Alternatively GridSearchCV can be used, where instead of using random combinations, all possible ones are tested.
 
-RandomizedSearchCV and GridSearchCV use what is known as __cross validation__ or CV, which is a machine learning technique for model training where the data is splitted into equal parts (fold) and then all but one folds are used to train the model and the last one to predict. In this way a more robust estimation of model performance can obtained, but __the final model should be train on all available data which usually yields the best performance__.
+RandomizedSearchCV and GridSearchCV use what is known as __cross validation__ or CV, which is a machine learning technique for model training where the data is split into equal parts (fold) and then all but one folds are used to train the model and the last one to predict. In this way a more robust estimation of model performance can obtained, but __the final model should be train on all available data which usually yields the best performance__.
 For a more in depth explanation of cross validation, (here)[https://scikit-learn.org/stable/modules/cross_validation.html] there is an excellent introduction.
 
 

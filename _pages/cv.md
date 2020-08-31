@@ -25,7 +25,7 @@ I provided the first tools for complex-centric prediction of novel protein compl
 #### Quantitative Bioscience Institute, UCSF (2020-current)
 *Supervisor: Nevan Krogan*
 
-I am currently a postdoctoral fellow in the Krogan lab at UCSF. My main project involves investigation of host-pathogen interactions in a variety of bacteria and virus. I also am actively involved into development of data independent acquisition strategies for ion mobility instruments (TIMS-DIA and FAIMS-DIA).
+I am currently a postdoctoral fellow in the Krogan lab at UCSF. My main project involves investigation of host-pathogen interactions in a variety of bacteria and virus. I am also actively involved into development of data independent acquisition strategies for ion mobility instruments (TIMS-DIA and FAIMS-DIA).
 
 #### Institute of Molecular System Biology, ETH Zurich (2017-2020)
 *Supervisors: Ruedi Aebersold, Matthias Gstaiger*
