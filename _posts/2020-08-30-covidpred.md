@@ -11,26 +11,33 @@ tags:
 
 
 ## Machine learning for proteomics: an easy introduction
-In a lot of proteomics publications recently, machine learning algorithms are used to perform a variety of tasks such as sample classification, image segmentation or prediction of important features in a set of samples.
+In several recent proteomics publications, machine learning algorithms are used to perform a variety of tasks such as sample classification, image segmentation or prediction of important features in a set of samples.\n
 
-In this series I want to explore a bit how to employ machine learning in omics/proteomics and in general some good do's and don't in machine learning applications, plus providing some Python3 code to exemplify some of the ideas.
-Only prerequisite is basic understanding of Python. I will drop explanation of things which I reckon be important but feel free to reach out for curiosities or similar
+In this series of posts I want to explore how to employ machine learning in omics/proteomics and in general some yay and nay in machine learning applications, plus providing some Python3 code to exemplify some of the ideas.
+Only prerequisite is basic understanding of Python. I will drop explanation of things which I reckon be important but feel free to reach out for curiosities or similar.
 
-### Case study using random forest to predict COVID19 severity
+### (Brief) introducion to random forest
 
-Random forest is one of the most basic learning algorithm around the block and the easiest to apply. For a detailed explanation, there are several resources such as [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), but here I will focus on more hands-on tutorial and explain things I think are important as we go.
+Random forest is one of the most basic learning algorithm around the block and the easiest to apply.
+It is usually my first choice for almost every ML problem as it usually yields reasonably good results and allows to get a sense of how the features and the preprocessing are for classification purposes.
+
+For a detailed explanation, there are several resources such as [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), but here I will focus on more hands-on tutorial and explain things as we go.
 One of the major application where random forest is employed in proteomics paper is scoring of proteins across samples and sample classification.
-Random forests can be conceptualized as a hierarchical stack of decision trees.
+This algorithm can be conceptualized as a hierarchical stack of decision trees.
+As example here is a set of trees for the famous iris dataset.
 
 ![](/images/rf_clf.png)
 
-A decision tree boils down to a series of questions which allows to uniquely separate a group of samples from others.
-So to calculate which features (i.e petal length or width) contributes more to classification, we can just observe how many misclassified samples are left after every decision.
+A decision tree boils down to a series of questions such as are the petals wider than X? which allow to uniquely separate a group of samples from the rest.
+So to calculate which features (i.e petal length or width) contribute more to classification, we can just observe how many misclassified samples are left after every decision.
 
 This concept is known as Gini Impurity and is related to how pure a leaf is (how many samples of only one class are present) compared to the remaining ones.
-Features leading to purer leaves are more important in the overall classification compared to other.
+Features leading to purer leaves are more important in the overall classification compared to others.
 
  __So we can retrieve how important a feature is and this will tell us about important proteins/analytes in our sample__
+
+
+#### Case study using random forest to predict COVID19 severity
 
 For this example I will use the COVID data from a recent Cell paper where a random forest classifier was used to classify severe and non-severe COVID19 patients based on metabolites and proteins.
 All data is available (here)[https://www.cell.com/cell/fulltext/S0092-8674(20)30627-9#supplementaryMaterial].
@@ -42,12 +49,11 @@ So let's start coding!
 
 #### Import packages and prepare training and test datasets
 
-We import and preprocess the data. Luckily for us, in the publication, the data is already separated in test and training set.
+
 Every ML model needs to be trained on a set of data and then the generalization (i.e how good the model learned our data) capabilities are tested on a independent datasets.
+For classification class labels are used (i.e positive and negative) and in the random forest the set of questions (remembering the trees above!) leading to best classification are used in the final model.
 
-If test data is not available usually the training data is split in a 0.75:0.25 training to test ratio or a 0.66/0.33 if there are sufficient data points.
-
-In the publication the data is already merged, so we only need to get positive (severe covid-19) and negative (non-severe covid-19) and then assign it to a label.
+Luckily for us, in the publication, the data is already separated in test and training set, so we only need to get positive (severe covid-19) and negative (non-severe covid-19) and then assign it to a label.
 For this, we will use supplementary table 1 which has the patient informations
 
 
@@ -140,7 +146,7 @@ print(evaluate(clf_rf_default, Xtest, ytest))
     0.7
 
 
-Here we can see we got 70% recall and made two mistakes in classification where we predicted non severe covid (i.e 0) instead of severe covid (1).
+Here we can see that we achieved 70% recall and made two mistakes in classification where we predicted non severe covid (i.e 0) instead of severe covid (1).
 
 Let's see if we can improve this by doing some parameter optimization. For this we will use a random grid search search. We will generate a set of various parameters and test random combinations to train our model.
 Alternatively GridSearchCV can be used, where instead of using random combinations, all possible ones are tested.
