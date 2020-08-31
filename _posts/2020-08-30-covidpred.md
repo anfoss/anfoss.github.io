@@ -11,7 +11,7 @@ tags:
 
 
 ## Machine learning for proteomics: an easy introduction
-In several recent proteomics publications, machine learning algorithms are used to perform a variety of tasks such as sample classification, image segmentation or prediction of important features in a set of samples.\n
+In several recent proteomics publications, machine learning algorithms are used to perform a variety of tasks such as sample classification, image segmentation or prediction of important features in a set of samples.
 
 In this series of posts I want to explore how to employ machine learning in omics/proteomics and in general some yay and nay in machine learning applications, plus providing some Python3 code to exemplify some of the ideas.
 Only prerequisite is basic understanding of Python. I will drop explanation of things which I reckon be important but feel free to reach out for curiosities or similar.
@@ -201,6 +201,9 @@ rf_opt_grid=rf_opt.fit(Xtrain, ytrain)
 clf_rf_opt = rf_opt.best_estimator_
 evaluate(clf_rf_opt, Xtest, ytest)
 'Performance increase by {}%'.format(evaluate(clf_rf_opt, Xtest, ytest) - evaluate(clf_rf_default, Xtest, ytest))
+
+# save classifier to a file
+joblib.dump('RF_covid.clf')
 ```
 
     Fitting 5 folds for each of 100 candidates, totalling 500 fits
