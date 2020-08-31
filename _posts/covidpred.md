@@ -18,7 +18,7 @@ Only prerequisite is basic understanding of Python. I will drop explanation of t
 
 #### Case study using random forest to predict COVID19 severity
 
-Random forest one of the most basic learning algorithm around the block and the easiest to apply. For a detailed explanation, there are several resources such as [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
+Random forest is one of the most basic learning algorithm around the block and the easiest to apply. For a detailed explanation, there are several resources such as [Sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), but here I will focus on more hands-on tutorial and explain things I think are important as we go.
 One of the major application where random forest is employed in proteomics paper is scoring of proteins across samples and sample classification.
 Random forests can be conceptualized as a hierarchical stack of decision trees.
 
@@ -28,23 +28,26 @@ A decision tree boils down to a series of questions which allows to uniquely sep
 So to calculate which features (i.e petal length or width) contributes more to classification, we can just observe how many misclassified samples are left after every decision.
 
 This concept is known as Gini Impurity and is related to how pure a leaf is (how many samples of only one class are present) compared to the remaining ones.
-Features leading to purer leafs are more important in the overall classification compared to other.
+Features leading to purer leaves are more important in the overall classification compared to other.
 
  __So we can retrieve how important a feature is and this will tell us about important proteins/analytes in our sample__
 
 For this example I will use the COVID data from a recent Cell paper where a random forest classifier was used to classify severe and non-severe COVID19 patients based on metabolites and proteins.
-All data is available (here)[https://www.cell.com/cell/fulltext/S0092-8674(20)30627-9#supplementaryMaterial]
-
+All data is available (here)[https://www.cell.com/cell/fulltext/S0092-8674(20)30627-9#supplementaryMaterial].
+Our goals are:
+- Classify patients in severe and non-severe COVID19
+- Identify features which are changing the most between severe and non-severe COVID
 So let's start coding!
 
 
 #### Import packages and prepare training and test datasets
 
-We import the data and prepare all data. Luckily for us, in the publication, the data is already separated in test and training set.
+We import and preprocess the data. Luckily for us, in the publication, the data is already separated in test and training set.
 Every ML model needs to be trained on a set of data and then the generalization (i.e how good the model learned our data) capabilities are tested on a independent datasets.
 
-If test data is not available usually the training data is split in a 0.75/0.25 training/test or 0.66/0.33 if there are sufficient data points
-Anyway, let's continue with out example. In the publication the data is already merged, we only need to get positive (severe covid-19) and negative (non-severe covid-19) assign it to a label.
+If test data is not available usually the training data is split in a 0.75:0.25 training to test ratio or a 0.66/0.33 if there are sufficient data points.
+
+In the publication the data is already merged, so we only need to get positive (severe covid-19) and negative (non-severe covid-19) and then assign it to a label.
 For this, we will use supplementary table 1 which has the patient informations
 
 
@@ -69,7 +72,7 @@ print(train.shape, test.shape)
     (1639, 33) (1590, 12)
 
 
-As seen there is a different number of features in training (1639) and test (1590). While for some algorithms this doesn't matter, random forest needs same number of features. So we will quickly fix it
+As seen there is a different number of features in training (1639) and test (1590). While for some algorithms this doesn't matter, RF needs same number of features. So we will quickly fix it
 
 
 ```python
@@ -112,7 +115,7 @@ Xtrain,ytrain = target_features_split(info, train, sheet_name='Prot_and_meta_mat
 Xtest, ytest = target_features_split(info, test, sheet_name='Prot_and_meta_matrix')
 ```
 
-#### Base machine learning
+#### Default random forest model
 
 We can start by fitting a very simple model with all default parameters. For this, we initialized an empty classifier and then fit the data.
 It is very important in machine learning to always use a seed (random_state in sklearn) to ensure reproducibility of the results.
@@ -139,7 +142,7 @@ print(evaluate(clf_rf_default, Xtest, ytest))
 
 Here we can see we got 70% recall and made two mistakes in classification where we predicted non severe covid (i.e 0) instead of severe covid (1).
 
-Let's see if we can improve this by doing some parameter optimization. For this we will use a grid search. So we will generate a set of various parameters and test random combinations to train our model.
+Let's see if we can improve this by doing some parameter optimization. For this we will use a random grid search search. We will generate a set of various parameters and test random combinations to train our model.
 Alternatively GridSearchCV can be used, where instead of using random combinations, all possible ones are tested.
 
 RandomizedSearchCV and GridSearchCV use what is known as __cross validation__ or CV, which is a machine learning technique for model training where the data is splitted into equal parts (fold) and then all but one folds are used to train the model and the last one to predict. In this way a more robust estimation of model performance can obtained, but __the final model should be train on all available data which usually yields the best performance__.
@@ -229,7 +232,7 @@ res['mean_test_score'].max()
 So the performance increased by just tuning the model.
 We also achieved almost the same AUC (0.955) vs 0.957 reported in the paper so we manage to reproduce the classification. We could go further and double check which patient wasn't classified correctly, but let's take a break and continue in the next post!
 Now, in the next part we will look into feature importance to figure out which proteins and metabolites allowed us to separate the samples.
-We will also go in depth into some more tune-up and the problem of overfitting and underfitting
+We will also go in depth into some more tune-up and the problem of overfitting and the tradeoff bias/variance
 
 
 ```python
