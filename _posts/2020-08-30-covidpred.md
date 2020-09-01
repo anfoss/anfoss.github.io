@@ -203,7 +203,7 @@ evaluate(clf_rf_opt, Xtest, ytest)
 'Performance increase by {}%'.format(evaluate(clf_rf_opt, Xtest, ytest) - evaluate(clf_rf_default, Xtest, ytest))
 
 # save classifier to a file
-joblib.dump('RF_covid.clf')
+joblib.dump(clf_rf_opt, 'RF_covid.clf')
 ```
 
     Fitting 5 folds for each of 100 candidates, totalling 500 fits
