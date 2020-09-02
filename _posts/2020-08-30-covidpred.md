@@ -40,7 +40,7 @@ Features leading to purer leaves are more important in the overall classificatio
 #### Case study using random forest to predict COVID19 severity
 
 For this example I will use the COVID data from a recent Cell paper where a random forest classifier was used to classify severe and non-severe COVID19 patients based on metabolites and proteins.
-All data is available (here)[https://www.cell.com/cell/fulltext/S0092-8674(20)30627-9#supplementaryMaterial].
+All data is available [here](https://www.cell.com/cell/fulltext/S0092-8674(20)30627-9#supplementaryMaterial).
 Our goals are:
 - Classify patients in severe and non-severe COVID19
 - Identify features which are changing the most between severe and non-severe COVID
@@ -152,7 +152,7 @@ Let's see if we can improve this by doing some parameter optimization. For this 
 Alternatively GridSearchCV can be used, where instead of using random combinations, all possible ones are tested.
 
 RandomizedSearchCV and GridSearchCV use what is known as __cross validation__ or CV, which is a machine learning technique for model training where the data is split into equal parts (fold) and then all but one folds are used to train the model and the last one to predict. In this way a more robust estimation of model performance can obtained, but __the final model should be train on all available data which usually yields the best performance__.
-For a more in depth explanation of cross validation, (here)[https://scikit-learn.org/stable/modules/cross_validation.html] there is an excellent introduction.
+For a more in depth explanation of cross validation, [here](https://scikit-learn.org/stable/modules/cross_validation.html) there is an excellent introduction.
 
 
 ```python
