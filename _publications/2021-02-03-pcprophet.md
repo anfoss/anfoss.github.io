@@ -2,7 +2,7 @@
 title: "Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data"
 collection: publications
 permalink: /publication/2021-02-03-pcprophet
-excerpt: ''
+excerpt: 'Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data'
 date: 2021-02-03
 venue: 'Journal 1'
 paperurl: 'https://www.biorxiv.org/content/10.1101/2020.05.06.080465v1'
