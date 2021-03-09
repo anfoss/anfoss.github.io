@@ -41,7 +41,7 @@ I have been a research assistant in the Zubarev group at Karolinska Institute wh
 #### Department of Analytical Chemistry, University of Parma (2014)
 *Supervisor: Maria Careri*
 
-As undegraduate I performed by bachelor thesis in the Careri group at the University of Parma where I worked on development and optimization of multiple reaction monitoring methods for detection of neurotoxins
+As undegraduate I performed my Bachelor thesis in the Careri group at the University of Parma where I worked on development and optimization of multiple reaction monitoring mass spectrometry methods for detection of neurotoxins
 
 
 ## Publications
