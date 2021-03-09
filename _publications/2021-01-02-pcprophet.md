@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2021-02-03-pcprophet
 excerpt: 'Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data'
 date: 2021-01-02
-venue: 'Journal 1'
+venue: 'Biorvix'
 paperurl: 'https://www.biorxiv.org/content/10.1101/2020.05.06.080465v1'
 citation: 'Fossati, A., Li, C., Sykacek, P., Heusel, M., Frommelt, F., Uliana, F., Hallal, M., Bludau, I., Capraz, K., Xue, P., Purcell, A., Gstaiger, M., & Aebersold, R. (2020). Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data. 1–47.'
 ---
@@ -12,8 +12,4 @@ Protein complexes, macro-molecular assemblies of two or more proteins, play vita
 
 [Preprint available on BiorVix](https://www.biorxiv.org/content/10.1101/2020.05.06.080465v1)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
-
-
-
-Fossati, A., Li, C., Sykacek, P., Heusel, M., Frommelt, F., Uliana, F., Hallal, M., Bludau, I., Capraz, K., Xue, P., Purcell, A., Gstaiger, M., & Aebersold, R. (2020). Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data. 1–47.
+Recommended citation: Fossati, A., Li, C., Sykacek, P., Heusel, M., Frommelt, F., Uliana, F., Hallal, M., Bludau, I., Capraz, K., Xue, P., Purcell, A., Gstaiger, M., & Aebersold, R. (2020). Systematic protein complex profiling and differential analysis from co- fractionation mass spectrometry data. 1–47.
