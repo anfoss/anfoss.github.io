@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2021-02-04-htts
 excerpt: 'Mapping specificity, entropy, allosteric changes and substrates in blood proteases by a high- throughput protease screen'
 date: 02-02-2021
-venue: 'Biorvix'
+venue: 'Nature Communications'
 paperurl: 'https://www.nature.com/articles/s41467-021-21754-8'
 citation: 'Uliana, F., Vizovišek, M., Acquasaliente, L., Ciuffa, R., Fossati, A., Frommelt, F., Goetze, S., Wollscheid, B., Gstaiger, M., De Filippis, V., auf dem Keller, U., & Aebersold, R. (2021). Mapping specificity, cleavage entropy, allosteric changes and substrates of blood proteases in a high-throughput screen. Nature Communications, 12(1), 1693. https://doi.org/10.1038/s41467-021-21754-8'
 ---
