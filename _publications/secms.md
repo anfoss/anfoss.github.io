@@ -5,7 +5,7 @@ collection: publications
 permalink: /publication/secms
 excerpt: 'System-Wide Profiling of Protein Complexes Via Size
 Exclusion Chromatography–Mass Spectrometry (SEC–MS)'
-date: 2021-03-15
+date: 03-03-2021
 venue: 'Methods Mol Biol'
 paperurl: 'https://pubmed.ncbi.nlm.nih.gov/33687722/'
 citation: 'Fossati A, Frommelt F, Uliana F, Martelli C, Vizovisek M, Gillet L, Collins B, Gstaiger M, Aebersold R. System-Wide Profiling of Protein Complexes Via Size Exclusion Chromatography-Mass Spectrometry (SEC-MS). Methods Mol Biol. 2021;2259:269-294. doi: 10.1007/978-1-0716-1178-4_18. PMID: 33687722.'
