@@ -11,4 +11,4 @@ The core idea is that through machine learning the co-elution profile for annota
 ![](/images/prophet_Fig1.png)
 
 
-For more information, our preprint is available on [BiorVix](https://www.biorxiv.org/content/10.1101/2020.05.06.080465v1).
+For more information, our preprint is available on [BiorVix](https://www.biorxiv.org/content/10.1101/2020.05.06.080465v1) and the final paper is available in [Nature Methods](https://www.nature.com/articles/s41592-021-01107-5)
